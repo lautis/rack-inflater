@@ -2,6 +2,8 @@
 
 Rack middleware to inflate GZip and other compressions in incoming HTTP requests.
 
+[![Build Status](https://travis-ci.org/lautis/rack-inflater.svg?branch=master)](https://travis-ci.org/lautis/rack-inflater)
+
 ## Installation
 
 Add this line to your application's Gemfile:
