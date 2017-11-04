@@ -1,5 +1,7 @@
+ENV['RAILS_ENV'] = 'test'
 require "bundler/setup"
 require "rack/inflater"
+require "rack"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
