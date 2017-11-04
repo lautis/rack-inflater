@@ -1,4 +1,5 @@
 require "rack/inflater/version"
+require "rack/inflater/railtie" if defined? ::Rails
 require "http_decoders"
 
 module Rack
