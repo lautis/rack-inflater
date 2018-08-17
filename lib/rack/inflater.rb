@@ -10,6 +10,7 @@ module Rack
 
     def call(env)
       if decompress?(env)
+        env["rack.input".freeze] = StringIO.new(env["rack.input".freeze].read) unless env["rack.input".freeze].respond_to?(:external_encoding)
         character_set = env["rack.input".freeze].external_encoding
         extracted = decode(
           env["rack.input".freeze],
